@@ -116,8 +116,14 @@
             <artifactId>extentreports</artifactId>
             <version>4.1.5</version>
         </dependency>
-
-
-
     </dependencies>
+         <build>
+        <plugins>
+            <!-- Package as an executable jar/war -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
